@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Treinamento em IA | Advocacia Correa de Castro & Associados</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #1a237e; /* Dark Blue */
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 20px auto 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .primary-cta {
+            background-color: #ffffff;
+            color: #1a237e;
+        }
+        .secondary-cta {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .primary-cta:hover { background-color: #e3f2fd; }
+        .secondary-cta:hover { background-color: white; color: #1a237e; }
+        
+        section { padding: 60px 20px; }
+        h2 { text-align: center; font-size: 2.2em; margin-bottom: 40px; color: #1a237e; }
+        
+        .value-prop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        .value-prop-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .curriculum-module {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .module-header {
+            padding: 20px;
+            background-color: #e8eaf6; /* Light Indigo */
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .module-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+        }
+        .module-content p { margin-top: 20px; }
+        .module-content ul { list-style-type: '✓ '; padding-left: 20px; }
+        .curriculum-module.active .module-content {
+            padding: 20px;
+            max-height: 500px; /* Adjust as needed */
+        }
+
+        .instructor-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        .instructor-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .instructor-bio h3 { margin-top: 0; font-size: 1.8em; color: #1a237e;}
+        
+        .investment-section { background-color: #e8eaf6; }
+        .investment-section ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: auto;
+        }
+        .investment-section li {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #1a237e;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background-color: #1a237e;
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover { background-color: #3f51b5; /* Indigo */ }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a237e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Engenharia de Prompts e Agentes de IA para a Excelência Jurídica</h1>
+            <p>Capacite a equipe da <strong>Advocacia Correa de Castro & Associados</strong> com as habilidades de IA de ponta para automatizar tarefas, aprimorar a análise jurídica e liderar a transformação digital no Direito.</p>
+            <a href="#curriculum" class="cta-button primary-cta">Ver o Currículo</a>
+            <a href="#contact" class="cta-button secondary-cta">Agendar uma Reunião</a>
+        </div>
+    </header>
+
+    <section id="value-prop">
+        <div class="container">
+            <h2>Por Que Este Programa é Essencial para Sua Advocacia?</h2>
+            <div class="value-prop-grid">
+                <div class="value-prop-item">
+                    <h3>Conteúdo Aprofundado e Prático</h3>
+                    <p>Nosso currículo vai muito além do básico. Focamos em técnicas avançadas e exercícios práticos com cenários jurídicos reais, garantindo que sua equipe não apenas entenda a teoria, mas domine a aplicação.</p>
+                </div>
+                <div class="value-prop-item">
+                    <h3>Foco Exclusivo no Setor Jurídico</h3>
+                    <p>Este não é um treinamento genérico de IA. Cada módulo, exemplo e ferramenta é selecionado e adaptado para as necessidades específicas de advogados, abordando desde a pesquisa de jurisprudência até a redação de petições.</p>
+                </div>
+                <div class="value-prop-item">
+                    <h3>Da Eficiência à Automação Inteligente</h3>
+                    <p>Ensinamos sua equipe a ir além do ChatGPT. O objetivo final é a criação de Agentes de IA personalizados que podem planejar e executar fluxos de trabalho complexos, liberando seus advogados para focarem em atividades estratégicas.</p>
+                </div>
+                <div class="value-prop-item">
+                    <h3>Vantagem Competitiva Duradoura</h3>
+                    <p>Ao capacitar sua equipe hoje, você não está apenas otimizando tarefas, está construindo uma base de conhecimento que posicionará o escritório como líder em inovação e eficiência no mercado pelos próximos anos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" style="background-color: #ffffff;">
+        <div class="container">
+            <h2>Currículo Detalhado do Programa</h2>
+            <p style="text-align:center; max-width: 700px; margin: -20px auto 40px;">Uma jornada de 5 módulos, do fundamental ao avançado, desenhada para transformar a prática jurídica do seu escritório.</p>
+
+            <div class="curriculum-module">
+                <div class="module-header">Módulo 1: Introdução à IA Generativa no Direito</div>
+                <div class="module-content">
+                    <p>Este módulo oferece uma visão geral da IA Generativa (IAG), sua evolução desde o eDiscovery até os Agentes de IA, e sua relevância para o setor jurídico. Explora os benefícios da IAG, como ganhos de eficiência e redução de custos, bem como os desafios e riscos envolvidos. Uma parte significativa deste módulo é dedicada às considerações éticas, incluindo privacidade de dados, confidencialidade, viés e o uso responsável da IA na prática jurídica.</p>
+                    <strong>O que sua equipe vai aprender:</strong>
+                    <ul>
+                        <li>A evolução e o impacto da IA no Direito.</li>
+                        <li>Identificar os benefícios e riscos da IAG na prática diária.</li>
+                        <li>Princípios éticos fundamentais: privacidade, confidencialidade e mitigação de viés.</li>
+                        <li>Diretrizes para o uso seguro e responsável de ferramentas de IA.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curriculum-module">
+                <div class="module-header">Módulo 2: Fundamentos da Engenharia de Prompt</div>
+                <div class="module-content">
+                    <p>Este módulo aprofunda a arte e a ciência de criar instruções eficazes para ferramentas de IAG. Aborda conceitos-chave como especificidade, precisão, fornecimento de contexto e uso de linguagem clara. Os participantes aprenderão várias técnicas de prompting, incluindo priming, prompting com poucos exemplos e o framework RICE (Papel, Instruções, Contexto, Expectativas). O módulo também aborda armadilhas comuns, como prompts excessivamente amplos, contexto assumido e alucinações, fornecendo estratégias para sua mitigação.</p>
+                    <strong>O que sua equipe vai aprender:</strong>
+                    <ul>
+                        <li>A estrutura de um prompt perfeito.</li>
+                        <li>Técnicas avançadas como Priming e Few-Shot Prompting.</li>
+                        <li>Aplicar o framework RICE para obter resultados precisos e consistentes.</li>
+                        <li>Como identificar e corrigir "alucinações" e respostas imprecisas da IA.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="curriculum-module">
+                <div class="module-header">Módulo 3: Engenharia de Prompt Avançada para Aplicações Jurídicas</div>
+                <div class="module-content">
+                    <p>Baseando-se nos fundamentos, este módulo concentra-se na aplicação da engenharia de prompts a tarefas jurídicas específicas. Os participantes aprenderão estratégias para pesquisa jurídica eficaz, análise e resumo de documentos, e suporte à redação de diversos documentos jurídicos. O módulo também aborda como usar a IAG para suporte à estratégia de casos, incluindo geração de argumentos e análise de precedentes. Exercícios práticos com cenários jurídicos do mundo real são um componente central deste módulo.</p>
+                    <strong>O que sua equipe vai aprender:</strong>
+                     <ul>
+                        <li>Criar prompts para pesquisa jurídica complexa e análise de jurisprudência.</li>
+                        <li>Automatizar o resumo e a análise de contratos e processos extensos.</li>
+                        <li>Utilizar a IA como assistente na redação de petições, pareceres e outros documentos.</li>
+                        <li>Desenvolver estratégias de caso com base em insights gerados pela IA.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="curriculum-module">
+                <div class="module-header">Módulo 4: Introdução aos Agentes de IA</div>
+                <div class="module-content">
+                    <p>Este módulo apresenta os agentes de IA como uma tecnologia que vai além da simples geração de conteúdo para planejar e executar tarefas de múltiplas etapas. Os participantes aprenderão como os agentes de IA funcionam, suas principais capacidades em redação de documentos, preparação de casos e automação administrativa, e os benefícios que oferecem aos escritórios de advocacia. O papel crítico da supervisão humana na supervisão das saídas dos agentes de IA também é enfatizado.</p>
+                    <strong>O que sua equipe vai aprender:</strong>
+                    <ul>
+                        <li>A diferença fundamental entre IAG e Agentes de IA autônomos.</li>
+                        <li>Capacidades dos Agentes: planejamento, execução de tarefas e interação com ferramentas.</li>
+                        <li>Como os Agentes podem automatizar fluxos de trabalho como a triagem de casos.</li>
+                        <li>A importância da supervisão humana para garantir a qualidade e a ética.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="curriculum-module">
+                <div class="module-header">Módulo 5: Implementando Agentes de IA em Equipes Jurídicas e Administrativas</div>
+                <div class="module-content">
+                    <p>O módulo final concentra-se na implementação prática de agentes de IA dentro do escritório. Aborda a identificação de oportunidades de automação em fluxos de trabalho jurídicos e administrativos, com casos de uso específicos para cada um. Os participantes aprenderão sobre estratégias de integração para incorporar agentes de IA em softwares e plataformas existentes, e desenvolverão um plano para um projeto piloto para testar e refinar sua estratégia de implementação.</p>
+                    <strong>O que sua equipe vai aprender:</strong>
+                    <ul>
+                        <li>Mapear os fluxos de trabalho do escritório para identificar oportunidades de automação.</li>
+                        <li>Estratégias para integrar Agentes de IA com os sistemas que vocês já utilizam.</li>
+                        <li>Como desenhar, construir e testar um Agente de IA para uma tarefa específica.</li>
+                        <li>Desenvolver um plano de implementação para um projeto piloto de sucesso.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructor">
+        <div class="container instructor-section">
+            <img src="https://via.placeholder.com/150" alt="Foto de Carla Oikawa">
+            <div class="instructor-bio">
+                <h3>Conheça sua Mentora</h3>
+                <h2>Carla Oikawa</h2>
+                <p>Especialista em Inteligência Artificial, Dados e Linguística, com foco na transformação digital do setor jurídico. Com experiência em implementação de sistemas de IA para conformidade com a LGPD, Carla se dedica a capacitar profissionais do Direito a utilizarem a tecnologia de forma estratégica e ética para alcançar novos patamares de eficiência e qualidade.</p>
+                <ul>
+                    <li>Especialista em Engenharia de Prompts e desenvolvimento de Agentes de IA.</li>
+                    <li>Consultora em projetos de Dados e IA para o setor corporativo.</li>
+                    <li>Palestrante sobre o impacto da tecnologia e da IA no futuro das profissões.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="investment" class="investment-section">
+        <div class="container">
+            <h2>Um Investimento na Eficiência e no Futuro da Sua Advocacia</h2>
+            <p style="text-align:center; max-width: 700px; margin: -20px auto 40px;">Nosso programa é uma parceria de 6 meses para garantir uma transformação profunda e duradoura.</p>
+            <ul>
+                <li><strong>6 Meses de Acompanhamento Estratégico</strong></li>
+                <li><strong>8 Horas Mensais de Consultoria e Treinamento</strong> (Sessões em grupo e individuais)</li>
+                <li><strong>Todo o Material Didático e de Apoio Exclusivo</strong></li>
+                <li><strong>Workshop Prático de Criação de Agentes de IA Personalizados</strong> para o escritório</li>
+                <li><strong>Manual de Uso Ético da IA</strong> com diretrizes claras de boas práticas</li>
+                <li><strong>Suporte Contínuo via Canal Dedicado</strong> para dúvidas práticas</li>
+                <li><strong>Palestra Presencial de Lançamento</strong> em Curitiba (a combinar)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+             <div class="contact-form">
+                <h2 style="margin-top:0;">Vamos Começar?</h2>
+                <p style="text-align:center; margin-top:-20px; margin-bottom:30px;">O próximo passo é agendar uma breve reunião para alinharmos os detalhes do programa às metas específicas da Advocacia Correa de Castro & Associados.</p>
+                <form>
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <input type="text" name="subject" value="Proposta - Programa de IA" readonly>
+                    <textarea name="message" rows="4" placeholder="Deixe sua mensagem..."></textarea>
+                    <button type="submit">Agendar Reunião</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Carla Oikawa | Consultoria em Inteligência Artificial</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.module-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const module = header.parentElement;
+                module.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
